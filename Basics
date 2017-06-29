@@ -1,0 +1,7 @@
+//Create variables
+	var test = 42;
+	console.log(test);
+// get the type of variable
+	var test = 42;
+	console.log(typeof test);
+
