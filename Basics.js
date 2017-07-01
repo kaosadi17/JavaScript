@@ -54,6 +54,51 @@
 
 	f();	
 
+//creating ananymous functions
+	var f = function (){
+  		console.log("hello");
+	};
+
+	f(); // -> hello
+
+//function as argument
+	var f = function (){
+  		console.log("hello");
+	};
+
+
+	var exec = function(fn){
+  		fn();
+	};
+
+	exec(f); // -> hello
+
+//function as object property
+	var myObj = {
+  		"prpo1":true
+	};
+
+	myObj.prop2 = function (){
+  		console.log("hello");
+	};
+
+	myObj.prop2();
+
+//This keyword
+	var person = {
+  		"fName":"Amali",
+  		"lname":"Osadi",
+  		"getFullName": function (){
+     		console.log(this.fName + " " + this.lname)
+  		}
+	};
+
+	var f = person.getFullName();
+
+
+
+
+
 
 
 
